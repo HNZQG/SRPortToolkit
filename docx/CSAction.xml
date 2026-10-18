@@ -1,0 +1,118 @@
+<ConditionalActions>
+
+<HasFlags requiredFlags="1">
+    <StartDecrease 
+        targetCompId="CS" 
+        daemonId="1" 
+        seconds="20" />
+         <StartDecrease 
+        targetCompId="CS2" 
+        daemonId="2" 
+        seconds="30" />
+   </HasFlags>
+
+
+    <HasFlags requiredFlags="2">
+    <!-- 服务器2: 600秒内升到100% -->
+    <StartIncrease 
+        targetCompId="CS" 
+        daemonId="1" 
+        seconds="10" />
+         <StartIncrease 
+        targetCompId="CS2" 
+        daemonId="2" 
+        seconds="25" />
+    </HasFlags>
+
+
+    <HasFlags requiredFlags="3">
+    <!-- 服务器3: 先设置进度，再设置变化 -->
+    <SetProgress 
+        targetCompId="CS" 
+        daemonId="1" 
+        value="0.45" />
+    </HasFlags>
+
+    <HasFlags requiredFlags="4">
+    <SetChangeRate 
+        targetCompId="CS" 
+        daemonId="1" 
+        rate="0.1" />
+     </HasFlags>
+
+    <HasFlags requiredFlags="5">
+    <SetTargetProgress 
+        targetCompId="CS" 
+        daemonId="1" 
+        target="0.90" />
+      </HasFlags>
+    
+    <HasFlags requiredFlags="6">
+    <!-- 服务器4: 增加20% -->
+    <AddProgress 
+        targetCompId="CS" 
+        daemonId="1" 
+        percent="20" />
+    </HasFlags>
+
+<HasFlags requiredFlags="7">
+    <!-- 服务器5: 1200秒后降为0% -->
+    <StartDecrease 
+        targetCompId="CS" 
+        daemonId="1" 
+        seconds="30" />
+     </HasFlags>
+
+<HasFlags requiredFlags="8">
+    <!-- 服务器6: 减少15% -->
+    <SubtractProgress 
+        targetCompId="CS" 
+        daemonId="1" 
+        percent="15" />
+ </HasFlags>
+
+<HasFlags requiredFlags="9">
+    <!-- 服务器7: 先设置进度，再增加 -->
+    <SetProgress 
+        targetCompId="CS" 
+        daemonId="1" 
+        value="0.40" />
+
+ </HasFlags>
+<HasFlags requiredFlags="10">
+    <StartIncrease 
+        targetCompId="CS" 
+        daemonId="1" 
+        seconds="300" />
+     </HasFlags>
+
+<HasFlags requiredFlags="11">
+    <!-- 服务器8: 按指定速率控制 -->
+    <IncreaseToTarget 
+        targetCompId="CS" 
+        daemonId="1" 
+        targetPercent="100" 
+        ratePerSecond="0.5" />
+     </HasFlags>
+
+     <HasFlags requiredFlags="12">
+    <!-- 后续操作示例：暂停、继续、重置等 -->
+    <Pause 
+        targetCompId="CS" 
+        daemonId="1" />
+    </HasFlags>
+
+    <HasFlags requiredFlags="13">
+    <Resume 
+        targetCompId="CS" 
+        daemonId="1" />
+
+        </HasFlags>
+
+    <HasFlags requiredFlags="14">
+    <Reset 
+        targetCompId="CS" 
+        daemonId="1" />
+        </HasFlags>
+
+</ConditionalActions>

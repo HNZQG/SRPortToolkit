@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="CS" 
+name="CS" 
+security="2" 
+icon="chip"  
+allowsDefaultBootModule="true" 
+type="1" 
+ip="CS">
+
+<adminPass pass="SR9413" />
+
+<ports>9418</ports>
+
+<portsForCrack val="0" />
+
+<ProgressBarDaemon Title="SaltFerm" Id="1" />
+
+</Computer>

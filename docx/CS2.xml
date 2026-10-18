@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="CS2" 
+name="CS2" 
+security="2" 
+icon="chip"  
+allowsDefaultBootModule="true" 
+type="1" 
+ip="CS2">
+
+<adminPass pass="SR9413" />
+
+<ports>9418</ports>
+
+<portsForCrack val="0" />
+
+<ProgressBarDaemon Title="Vxlem" Id="2" />
+
+</Computer>

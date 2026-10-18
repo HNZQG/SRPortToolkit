@@ -1,0 +1,275 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="PreLibraryOfDocumentFilesFileArchiveServer"
+          name="OverLapping文件档案前置库服务器"
+          security="3"
+          allowsDefaultBootModule="true"
+          ip="OLPreLibraryOfDocumentFiles"
+          type="empty" >
+
+<adminPass pass="PreLibraryOfDocumentFilesOverLapping" />
+
+<ports>80, 22, 25</ports>
+<portsForCrack val="1000" />
+
+<proxy time="2" />
+<trace time="1" />
+<firewall level="2" solution="OL" additionalTime="1.0"/>
+
+<DatabaseDaemonPlus Name="OverLapping文件档案前置库" Permissions="public" DataType="PreLibraryOfDocumentFiles" SearchField="KeyWord"
+    CanBrowser="false" Foldername="PreLibraryOfDocumentFilesServer" themeColor="255,228,196">
+<PreLibraryOfDocumentFiles>
+<KeyWord>Nisei MK III</KeyWord>
+<FILETitle1>机密文件 Nisei MK III</FILETitle1>
+<FILECodes1>NONE</FILECodes1>
+<FILETitle2>Nisei MK III 生物密钥协议</FILETitle2>
+<FILECodes2>CF-009-BK</FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>Anvil</KeyWord>
+<FILETitle1>审讯记录 · Anvil</FILETitle1>
+<FILECodes1>IR-2026-03-12</FILECodes1>
+<FILETitle2>LOST事件 设备送修记录（副本）</FILETitle2>
+<FILECodes2>LOG-MT-1127</FILECodes2>
+<FILETitle3>后勤装备处 季度绩效表彰记录</FILETitle3>
+<FILECodes3>HR-LOG-04-19</FILECodes3>
+<FILETitle4>送修设备异常流转情况通报</FILETitle4>
+<FILECodes4>LOG-MT-12-08</FILECodes4>
+<FILETitle5>请搜索新关键词(Anvil1)</FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>Anvil1</KeyWord>
+<FILETitle1>战术平板维修工单（纸质复印件）</FILETitle1>
+<FILECodes1>MT-1127-P</FILECodes1>
+<FILETitle2></FILETitle2>
+<FILECodes2></FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>TraceV2</KeyWord>
+<FILETitle1>TraceV2 技术说明</FILETitle1>
+<FILECodes1>TECH-T2-112</FILECodes1>
+<FILETitle2>关于TraceV2系统外部特征监测情况的函</FILETitle2>
+<FILECodes2>TECH-T2-47</FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>Remote Control Center</KeyWord>
+<FILETitle1>远程控制中心 占领事件报告</FILETitle1>
+<FILECodes1>IR-RCC-03-15</FILECodes1>
+<FILETitle2>格式化程序 终止操作记录</FILETitle2>
+<FILECodes2>LOG-FMT-03-15</FILECodes2>
+<FILETitle3>远程控制中心门禁异常告警记录</FILETitle3>
+<FILECodes3>ALM-RCC-03-15</FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>Raven</KeyWord>
+<FILETitle1>Raven 组织 加密邮件（节选）</FILETitle1>
+<FILECodes1>DEC-MAIL-04-07</FILECodes1>
+<FILETitle2>磁轨炮 超载记录</FILETitle2>
+<FILECodes2>LOG-RG-04-22</FILECodes2>
+<FILETitle3>28.5Hz 谐振信号监测报告</FILETitle3>
+<FILECodes3>MON-SIG-04-23</FILECodes3>
+<FILETitle4>磁轨炮能源波动监测原始数据</FILETitle4>
+<FILECodes4>RAW-RG-04-22</FILECodes4>
+<FILETitle5>请搜索新关键词(Raven1)</FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>Raven1</KeyWord>
+<FILETitle1>渡鸦图腾 激光蚀刻痕迹鉴定</FILETitle1>
+<FILECodes1>FOR-04-09</FILECodes1>
+<FILETitle2></FILETitle2>
+<FILECodes2></FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>Bibliotheque</KeyWord>
+<FILETitle1>Bibliotheque 联络日志</FILETitle1>
+<FILECodes1>COM-BIB-22-19</FILECodes1>
+<FILETitle2></FILETitle2>
+<FILECodes2></FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>Sub Control Panel</KeyWord>
+<FILETitle1>子控制面板 访问记录</FILETitle1>
+<FILECodes1>LOG-SCP-001</FILECodes1>
+<FILETitle2>子控制面板 安装日志</FILETitle2>
+<FILECodes2>LOG-CON-0612</FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>C.O.D.E</KeyWord>
+<FILETitle1>C.O.D.E 原型机研发记录摘要</FILETitle1>
+<FILECodes1>RND-CODE-01</FILECodes1>
+<FILETitle2>C.O.D.E 追回行动报告摘要</FILETitle2>
+<FILECodes2>OP-CODE-02</FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>BettaThanYou</KeyWord>
+<FILETitle1>关于BettaThanYou越狱事件的情况通报</FILETitle1>
+<FILECodes1>SEC-BTY-02-25</FILECodes1>
+<FILETitle2></FILETitle2>
+<FILECodes2></FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>Sam</KeyWord>
+<FILETitle1>关于Sam越狱事件的情况通报</FILETitle1>
+<FILECodes1>SEC-SAM-11-23</FILECodes1>
+<FILETitle2></FILETitle2>
+<FILECodes2></FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>Gas</KeyWord>
+<FILETitle1>关于Gas近期活动线索</FILETitle1>
+<FILECodes1>INT-GAS-01-13</FILECodes1>
+<FILETitle2></FILETitle2>
+<FILECodes2></FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>OverLapping</KeyWord>
+<FILETitle1>OverLapping 介绍</FILETitle1>
+<FILECodes1>SE-FIVE-OL</FILECodes1>
+<FILETitle2>关于第12队1组申请调阅一级档案的批复</FILETitle2>
+<FILECodes2>ADM-4F-09-23</FILECodes2>
+<FILETitle3>审讯室3号音频记录索引</FILETitle3>
+<FILECodes3>AUD-IRC-03-12</FILECodes3>
+<FILETitle4>公用镜像服务器文件清理记录</FILETitle4>
+<FILECodes4>OP-IMG-04-11</FILECodes4>
+<FILETitle5>请搜索新关键词(OverLapping1)</FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>OverLapping1</KeyWord>
+<FILETitle1>第12队1组 通讯频道设备绑定记录</FILETitle1>
+<FILECodes1>COM-12-1-11</FILECodes1>
+<FILETitle2>关于第12队1组组长任期情况的说明</FILETitle2>
+<FILECodes2>HR-12-1-01</FILECodes2>
+<FILETitle3>第12队1组 与目标BettaThanYou历史交集说明</FILETitle3>
+<FILECodes3>HR-12-1-19</FILECodes3>
+<FILETitle4>公用节点网络拓扑变更记录</FILETitle4>
+<FILECodes4>NET-TOP-04-12</FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>Delta-3</KeyWord>
+<FILETitle1>Delta-3 安全协议</FILETitle1>
+<FILECodes1>SP-D3-998</FILECodes1>
+<FILETitle2></FILETitle2>
+<FILECodes2></FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>LOST</KeyWord>
+<FILETitle1>LOST事件 补充说明</FILETitle1>
+<FILECodes1>ADM-LOST-00</FILECodes1>
+<FILETitle2></FILETitle2>
+<FILECodes2></FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+<PreLibraryOfDocumentFiles>
+<KeyWord>Zero</KeyWord>
+<FILETitle1>Zero 设备负载异常记录</FILETitle1>
+<FILECodes1>LOG-ZERO-22-41</FILECodes1>
+<FILETitle2></FILETitle2>
+<FILECodes2></FILECodes2>
+<FILETitle3></FILETitle3>
+<FILECodes3></FILECodes3>
+<FILETitle4></FILETitle4>
+<FILECodes4></FILECodes4>
+<FILETitle5></FILETitle5>
+<FILECodes5></FILECodes5>
+</PreLibraryOfDocumentFiles>
+
+</DatabaseDaemonPlus>
+  
+
+</Computer>

@@ -1,0 +1,130 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04EF8673-9BFF-4CF7-A208-A1D9E85A01A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>SRPortToolkit</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>SRToolKit</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.5.5.0, Culture=neutral, processorArchitecture=x64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Core, Version=6.0.0.423, Culture=neutral, processorArchitecture=x64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\BepInEx.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Hacknet, Version=5.0.0.0, Culture=neutral, processorArchitecture=x64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\BepInEx.Hacknet.dll</HintPath>
+    </Reference>
+    <Reference Include="FNA, Version=17.2.0.0, Culture=neutral, processorArchitecture=x64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\FNA.dll</HintPath>
+    </Reference>
+    <Reference Include="HacknetPathfinder, Version=1.0.0.0, Culture=neutral, processorArchitecture=x64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\HacknetPathfinder.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=x64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour, Version=21.9.19.1, Culture=neutral, processorArchitecture=x64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils, Version=21.9.19.1, Culture=neutral, processorArchitecture=x64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="PathfinderAPI, Version=5.0.0.0, Culture=neutral, processorArchitecture=x64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\PathfinderAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\ProgressBarAction.cs" />
+    <Compile Include="Patches\MainMenu.cs" />
+    <Compile Include="Daemons\ProgressBarDaemon.cs" />
+    <Compile Include="Daemons\DatabaseDaemonPlus.cs" />
+    <Compile Include="Executables\AutoCrackFirewall.cs" />
+    <Compile Include="Executables\RedisBreaker.cs" />
+    <Compile Include="Patches\DatabaseDaemonPatch.cs" />
+    <Compile Include="Patches\Name.cs" />
+    <Compile Include="Patches\ObjectSerializerPatcher.cs" />
+    <Compile Include="SRPortToolkit.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\SRPortToolkit\v16\.suo" />
+    <None Include=".vs\VSWorkspaceState.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libs\0Harmony.dll" />
+    <Content Include="libs\0Harmony.xml" />
+    <Content Include="libs\BepInEx.Core.dll" />
+    <Content Include="libs\BepInEx.Core.xml" />
+    <Content Include="libs\BepInEx.Hacknet.dll" />
+    <Content Include="libs\FNA.dll" />
+    <Content Include="libs\HacknetPathfinder.exe" />
+    <Content Include="libs\Mono.Cecil.dll" />
+    <Content Include="libs\MonoMod.RuntimeDetour.dll" />
+    <Content Include="libs\MonoMod.RuntimeDetour.xml" />
+    <Content Include="libs\MonoMod.Utils.dll" />
+    <Content Include="libs\MonoMod.Utils.xml" />
+    <Content Include="libs\PathfinderAPI.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="libs\0Harmony.dll" />
+    <Analyzer Include="libs\BepInEx.Core.dll" />
+    <Analyzer Include="libs\BepInEx.Hacknet.dll" />
+    <Analyzer Include="libs\FNA.dll" />
+    <Analyzer Include="libs\Mono.Cecil.dll" />
+    <Analyzer Include="libs\MonoMod.RuntimeDetour.dll" />
+    <Analyzer Include="libs\MonoMod.Utils.dll" />
+    <Analyzer Include="libs\PathfinderAPI.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BepInEx\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
